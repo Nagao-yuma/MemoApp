@@ -2,15 +2,13 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { shadowOffset } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
 
+import AppBar from './src/components/AppBar';
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <View style={styles.appbar}>
-        <View style={styles.appbarInner}>
-          <Text style={styles.appbarTitle}>Memo App</Text>
-          <Text style={styles.appbarRight}>ログアウト</Text>
-        </View>
-      </View>
+
+      <AppBar />
 
       <View>
         <View style={styles.memoListItem}>
@@ -54,28 +52,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#F0F4F8',
-  },
-  appbar: {
-    backgroundColor: '#467FD3',
-    width: '100%',
-    height: 104,
-    justifyContent: 'flex-end',
-  },
-  appbarInner: {
-    alignItems: 'center',
-  },
-  appbarTitle: {
-    fontSize: 22,
-    color: '#fff',
-    marginBottom: 8,
-    lineHeight: 32,
-    fontWeight: 'bold',
-  },
-  appbarRight: {
-    position: 'absolute',
-    right: 19,
-    bottom: 16,
-    color: 'rgba( 255, 255, 255, 0.8)',
   },
   memoListItem: {
     justifyContent: 'space-between',
