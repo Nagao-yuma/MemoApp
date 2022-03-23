@@ -3,12 +3,14 @@ import { StyleSheet, Text, View } from 'react-native';
 import { shadowOffset } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
 
 import AppBar from './src/components/AppBar';
+import MemoList from './src/components/MemoList';
 
 export default function App() {
   return (
     <View style={styles.container}>
 
       <AppBar />
+      <MemoList />
 
       <View>
         <View style={styles.memoListItem}>
@@ -52,25 +54,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#F0F4F8',
-  },
-  memoListItem: {
-    justifyContent: 'space-between',
-    flexDirection: 'row',
-    backgroundColor: '#fff',
-    paddingVertical: 16,
-    paddingHorizontal: 19,
-    alignItems: 'center',
-    borderBottomWidth: 1,
-    borderColor: 'rgba(0, 0, 0, 0.15)',
-  },
-  memoListItemTitle: {
-    fontSize: 16,
-    lineHeight: 32,
-  },
-  memoListItemDate: {
-    color: '#848484',
-    fontSize: 12,
-    lineHeight: 16,
   },
   circleButton: {
     backgroundColor: '#467FD3',
