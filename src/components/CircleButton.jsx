@@ -1,10 +1,11 @@
 import react from "react";
 import { View, Text, StyleSheet} from 'react-native';
 
-export default function circleButton() {
+export default function CircleButton(props) {
+    const { children } = props;
     return(
         <View style={styles.circleButton}>
-            <Text style={styles.circleButtonLabel}>+</Text>
+            <Text style={styles.circleButtonLabel}>{children}</Text>
         </View>
     );
 }

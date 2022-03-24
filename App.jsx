@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { shadowOffset } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
 
 import AppBar from './src/components/AppBar';
@@ -12,7 +12,7 @@ export default function App() {
 
       <AppBar />
       <MemoList />
-      <CircleButton />
+      <CircleButton>+</CircleButton>
 
     </View>
   );
