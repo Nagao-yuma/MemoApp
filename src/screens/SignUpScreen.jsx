@@ -2,18 +2,22 @@ import React from 'react';
 import { View, StyleSheet, Text, TextInput, TouchableOpacity} from 'react-native';
 import Button from '../components/Button';
 
-export default function SignUpScreen() {
+export default function SignUpScreen(props) {
+    const { navigation } = props;
     return(
         <View style={styles.container}>
             <View style={styles.inner}>
                 <Text style={styles.title}>Sign Up</Text>
                 <TextInput placeholder="Email Address" style={styles.input} />
                 <TextInput placeholder="Password" style={styles.input} />
-                <Button label="Submit" />
+                <Button 
+                    label="Submit"
+                    onPress={() => { navigation.navigate('MemoList'); }}
+                />
                 <View style={styles.footer}>
                     <Text style={styles.footerText}>Already registered?</Text>
                     <TouchableOpacity>
-                        <Text style={styles.footerLink}>Log in.</Text>
+                        <Text style={styles.footerLink} onPress={() => {navigation.navigate('LogIn'); }}>Log in.</Text>
                     </TouchableOpacity>
                 </View>
             </View>
