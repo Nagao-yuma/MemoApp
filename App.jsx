@@ -13,12 +13,12 @@ import SignUpScreen from './src/screens/SignUpScreen';
 const Stack = createStackNavigator();
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB_ApVMej5ziRjkT7ZfqRFiMNjDidc7tqw",
-  authDomain: "memoapp-487cd.firebaseapp.com",
-  projectId: "memoapp-487cd",
-  storageBucket: "memoapp-487cd.appspot.com",
-  messagingSenderId: "1018362979758",
-  appId: "1:1018362979758:web:1dcdd2a691c76b2e6b143f",
+  apiKey: "AIzaSyAzCXzTW4c73bIH-3BtL3l39yol2Xz4JNA",
+  authDomain: "memoapp-32e5f.firebaseapp.com",
+  projectId: "memoapp-32e5f",
+  storageBucket: "memoapp-32e5f.appspot.com",
+  messagingSenderId: "897975579215",
+  appId: "1:897975579215:web:9e910514ebc9a01c83703a"
 };
 
 if (firebase.apps.length === 0) {
@@ -29,7 +29,7 @@ export default function App() {
     return (
       <NavigationContainer>
         <Stack.Navigator
-          initialRouteName='LogIn'
+          initialRouteName='SignUp'
           screenOptions={{
             headerStyle: { backgroundColor: '#467FD3'},
             headerTitleStyle: { color: '#FFF'},
