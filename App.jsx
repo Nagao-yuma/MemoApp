@@ -10,16 +10,9 @@ import MemoCreateScreen from './src/screens/MemoCreateScreen';
 import LogInScreen from './src/screens/LogInScreen';
 import SignUpScreen from './src/screens/SignUpScreen';
 
-const Stack = createStackNavigator();
+import { firebaseConfig } from './env';
 
-const firebaseConfig = {
-  apiKey: "AIzaSyAzCXzTW4c73bIH-3BtL3l39yol2Xz4JNA",
-  authDomain: "memoapp-32e5f.firebaseapp.com",
-  projectId: "memoapp-32e5f",
-  storageBucket: "memoapp-32e5f.appspot.com",
-  messagingSenderId: "897975579215",
-  appId: "1:897975579215:web:9e910514ebc9a01c83703a"
-};
+const Stack = createStackNavigator();
 
 if (firebase.apps.length === 0) {
   firebase.initializeApp(firebaseConfig);
